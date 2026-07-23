@@ -1,1 +1,3 @@
-<Solution />
+<Solution>
+  <Project Path="TutorPlatform.Domain/TutorPlatform.Domain.csproj" />
+</Solution>
