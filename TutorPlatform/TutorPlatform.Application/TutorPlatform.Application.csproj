@@ -22,10 +22,4 @@
     <ProjectReference Include="..\TutorPlatform.Domain\TutorPlatform.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Common\Interfaces\" />
-    <Folder Include="Contracts\" />
-    <Folder Include="Features\" />
-  </ItemGroup>
-
 </Project>
