@@ -1,4 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using TutorPlatform.Infrastructure.Models;
 
 namespace TutorPlatform.Infrastructure.Persistence

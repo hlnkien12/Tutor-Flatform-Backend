@@ -1,4 +1,4 @@
-﻿using TutorPlatform.Application.Common.Interfaces;
+using TutorPlatform.Application.Common.Interfaces;
 
 namespace TutorPlatform.Infrastructure.Services
 {
