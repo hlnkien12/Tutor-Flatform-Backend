@@ -26,6 +26,12 @@ namespace TutorPlatform.Application.Features.Auth.Commands.Register
 
         public async Task<AuthResponse> Handle(RegisterCommand request, CancellationToken cancellationToken)
         {
+            // Block registration with Admin role — Admin account is seeded by the system only.
+            if (request.Role == (int)UserRole.Admin)
+            {
+                throw new ForbiddenException("Cannot register as Admin. Admin account is managed by the system.");
+            }
+
             var existingUser = await _userRepository.GetByEmailAsync(request.Email);
             if (existingUser != null)
             {
