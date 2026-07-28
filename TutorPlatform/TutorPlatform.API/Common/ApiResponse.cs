@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 
 namespace TutorPlatform.API.Common
 {
@@ -13,7 +13,7 @@ namespace TutorPlatform.API.Common
         {
             return new ApiResponse<T> { Success = true, StatusCode = 200, Data = data };
         }
-
+        
         public static ApiResponse<T> Created(T data)
         {
             return new ApiResponse<T> { Success = true, StatusCode = 201, Data = data };
